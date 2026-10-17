@@ -2,80 +2,30 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Football Radar – actus foot du jour, résultats et transferts</title>
-<meta name="description" content="Football Radar rassemble chaque jour les résultats de Ligue 1, les actus et les transferts du football.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Football Radar – actus foot du jour, transferts et résultats</title>
+<meta name="description" content="Football Radar rassemble chaque jour les actus du football : transferts, résultats et analyses, mises à jour automatiquement.">
 <meta name="robots" content="index, follow">
+<meta property="og:title" content="Football Radar – actus foot du jour">
+<meta property="og:description" content="Les actus du football, mises à jour automatiquement toute la journée.">
+<meta property="og:type" content="website">
 <style>
-:root{--bg:#f5f7f5;--card:#fff;--text:#16201a;--muted:#5d6b62;--accent:#15803d;--border:#dde5df;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1511;--card:#17211b;--text:#eef4f0;--muted:#9fb0a5;--accent:#4ade80;--border:#26352c}}
-:root[data-theme="dark"]{--bg:#0e1511;--card:#17211b;--text:#eef4f0;--muted:#9fb0a5;--accent:#4ade80;--border:#26352c}
+:root{--bg:#f5f7f5;--card:#fff;--text:#16201a;--muted:#5d6b62;--accent:#15803d;--border:#dde5df}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1511;--card:#17211b;--text:#eef4f0;--muted:#9fb0a5;--accent:#4ade80;--border:#26352c}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
-main{max-width:620px;margin:0 auto;padding:24px 16px 48px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}
+main{max-width:640px;margin:0 auto;padding:24px 16px 48px}
 h1{font-size:28px;margin:8px 0 4px}
-.sub{color:var(--muted);margin:0 0 20px}
-h2{font-size:16px;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin:24px 0 8px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-a.tile{display:block;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;color:var(--text);text-decoration:none}
-a.tile strong{display:block}
-.row{display:flex;justify-content:space-between;gap:8px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px;font-size:15px}
-.row b{color:var(--accent);white-space:nowrap}
-.row em{font-style:normal;color:var(--muted);white-space:nowrap}
-a.tile span{font-size:13px;color:var(--muted)}
-input{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);font:inherit;margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 8px}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin:24px 0 8px}
+a.art{display:block;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px;color:var(--text);text-decoration:none}
 </style>
 </head>
 <body>
 <main>
 <h1>⚽ Football Radar</h1>
-<p class="sub">Toutes les actus du foot, au même endroit.</p>
-
-<h2>Ligue 1 · Résultats</h2>
-<div class="row"><span>Aucun résultat pour le moment</span><em>–</em></div>
-
-<h2>Ligue 1 · Dimanche 18 octobre</h2>
-<div class="row"><span>Angers – Marseille</span><em>15 h</em></div>
-<div class="row"><span>Le Havre – Auxerre</span><em>17 h 15</em></div>
-<div class="row"><span>Lorient – Monaco</span><em>17 h 15</em></div>
-<div class="row"><span>Paris FC – Rennes</span><em>17 h 15</em></div>
-<div class="row"><span>Lyon – Nice</span><em>20 h 45</em></div>
-
-<h2>Recherche rapide</h2>
-<input id="q" placeholder="Cherche un joueur, un club, un match…">
-<div class="grid">
-<a class="tile" href="#" id="gnews"><strong>Actus Google</strong><span>Dernières infos</span></a>
-<a class="tile" href="#" id="gvid"><strong>Vidéos YouTube</strong><span>Résumés, buts</span></a>
-</div>
-
-<h2>Actus en français</h2>
-<div class="grid">
-<a class="tile" href="https://www.lequipe.fr/Football/" target="_blank" rel="noopener"><strong>L’Équipe</strong><span>Actus et analyses</span></a>
-<a class="tile" href="https://www.footmercato.net/" target="_blank" rel="noopener"><strong>Foot Mercato</strong><span>Transferts</span></a>
-<a class="tile" href="https://rmcsport.bfmtv.com/football/" target="_blank" rel="noopener"><strong>RMC Sport</strong><span>Football</span></a>
-<a class="tile" href="https://www.uefa.com/" target="_blank" rel="noopener"><strong>UEFA</strong><span>Compétitions européennes</span></a>
-</div>
-
-<h2>Scores en direct</h2>
-<div class="grid">
-<a class="tile" href="https://www.flashscore.fr/" target="_blank" rel="noopener"><strong>Flashscore</strong><span>Résultats live</span></a>
-<a class="tile" href="https://www.sofascore.com/fr/" target="_blank" rel="noopener"><strong>SofaScore</strong><span>Stats et notes</span></a>
-</div>
-
-<h2>International</h2>
-<div class="grid">
-<a class="tile" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener"><strong>BBC Sport</strong><span>Angleterre et monde</span></a>
-<a class="tile" href="https://www.marca.com/en/football.html" target="_blank" rel="noopener"><strong>Marca</strong><span>Espagne</span></a>
-</div>
+<p class="sub">Actus mises à jour automatiquement. Dernière mise à jour : 17/10/2026 à 21:57 UTC</p>
+<h2>L’Équipe</h2><a class="art" href="https://www.lequipe.fr/Football/Actualites/Cheveux-longs-bon-pied-gauche-et-etudes-scientifiques-les-jeunes-annees-nicoises-d-olivier-pantaloni-coach-du-gym/1736507#at_medium=RSS_feeds" target="_blank" rel="noopener">Les jeunes années niçoises d&#x27;Olivier Pantaloni</a><a class="art" href="https://www.lequipe.fr/Football/Actualites/-il-n-est-vraiment-pas-en-forme-affaibli-par-un-virus-vincent-kompany-a-tenu-a-etre-present-sur-le-banc-du-bayern-munich-contre-leipzig/1736629#at_medium=RSS_feeds" target="_blank" rel="noopener">« Il n&#x27;est vraiment pas en forme » : affaibli par un virus, Vincent Kompany a tenu à être présent sur le banc du Bayern Munich contre Leipzig</a><a class="art" href="https://www.lequipe.fr/Football/Article/Les-notes-de-troyes-lens-thauvin-ne-s-arrete-plus/1736625#at_medium=RSS_feeds" target="_blank" rel="noopener">Les notes de Troyes-Lens : Thauvin ne s&#x27;arrête plus</a><a class="art" href="https://www.lequipe.fr/Football/Article/Une-semaine-en-or-pour-ousmane-dembele-brillant-contre-manchester-city-et-implique-sur-les-trois-buts-du-psg-a-strasbourg/1736617#at_medium=RSS_feeds" target="_blank" rel="noopener">Dembélé, une semaine en or</a><a class="art" href="https://www.lequipe.fr/Football/Actualites/Ol-lyonnes-s-impose-largement-lors-du-choc-de-la-cinquieme-journee-contre-le-psg-et-trone-au-sommet-de-l-arkema-premiere-ligue/1736613#at_medium=RSS_feeds" target="_blank" rel="noopener">OL Lyonnes s&#x27;impose largement lors du choc de la cinquième journée contre le PSG et trône au sommet de l&#x27;Arkema Première Ligue</a><a class="art" href="https://www.lequipe.fr/Football/Article/Paroles-d-ex-coco-michel-capitaine-emblematique-de-guingamp-il-a-chope-son-poisson-rouge-et-l-a-mis-dans-sa-bouche/1736429#at_medium=RSS_feeds" target="_blank" rel="noopener">«Coco» Michel : «Il a chopé son poisson rouge et l&#x27;a mis dans sa bouche»</a><a class="art" href="https://www.lequipe.fr/Football/Actualites/Vainqueur-a-troyes-lens-enchaine-un-second-succes-en-ligue-1-grace-a-un-grand-florian-thauvin/1736604#at_medium=RSS_feeds" target="_blank" rel="noopener">Vainqueur à Troyes, Lens enchaîne un second succès en Ligue 1 grâce à un grand Florian Thauvin</a><a class="art" href="https://www.lequipe.fr/Football/Actualites/Lille-accroche-a-domicile-par-brest-mais-coleader-de-ligue-1/1736601#at_medium=RSS_feeds" target="_blank" rel="noopener">Le LOSC accroché à domicile par Brest mais coleader de Ligue 1</a><h2>Foot Mercato</h2><a class="art" href="https://www.footmercato.net/a4303225175836921197-ol-paulo-fonseca-annonce-plusieurs-changements-contre-logc-nice" target="_blank" rel="noopener">OL : Paulo Fonseca annonce plusieurs changements contre l’OGC Nice</a><a class="art" href="https://www.footmercato.net/a6580338005246811519-arkema-premiere-ligue-ol-lyonnes-ecrase-le-psg" target="_blank" rel="noopener">Arkema Première Ligue : OL Lyonnes écrase le PSG</a><a class="art" href="https://www.footmercato.net/a1134855798916073985-psg-premieres-nouvelles-rassurantes-pour-nuno-mendes" target="_blank" rel="noopener">PSG : premières nouvelles rassurantes pour Nuno Mendes</a><a class="art" href="https://www.footmercato.net/a6691990491322967638-ligue-1-le-losc-rate-loccasion-de-prendre-la-1ere-place-lens-enchaine-a-troyes" target="_blank" rel="noopener">Ligue 1 : le LOSC rate l’occasion de prendre la 1ère place, Lens enchaine à Troyes</a><a class="art" href="https://www.footmercato.net/a2271471394533545039-serie-a-las-rome-domine-le-genoa-et-grimpe-a-la-deuxieme-place" target="_blank" rel="noopener">Serie A : l’AS Rome domine le Genoa et grimpe à la deuxième place</a><a class="art" href="https://www.footmercato.net/a760352523569454431-ligue-1-florian-thauvin-fait-aussi-bien-que-lionel-messi" target="_blank" rel="noopener">Ligue 1 : Florian Thauvin fait aussi bien que Lionel Messi</a><a class="art" href="https://www.footmercato.net/a7840930352240235140-ligue-des-champions-le-fc-barcelone-envoie-un-gros-avertissement-au-psg" target="_blank" rel="noopener">Ligue des Champions : le FC Barcelone envoie un gros avertissement au PSG !</a><a class="art" href="https://www.footmercato.net/a8836549129938792950-ligue-2-lasse-simpose-face-au-red-star-et-conforte-sa-place-de-leader" target="_blank" rel="noopener">Ligue 2 : l’ASSE s’impose face au Red Star et conforte sa place de leader</a><h2>RMC Sport</h2><a class="art" href="https://rmcsport.bfmtv.com/football/clubs/paris-saint-germain/j-espere-que-le-nouveau-president-francais-va-continuer-d-aider-l-ukraine-zabarnyi-repond-a-marine-le-pen-apres-strasbourg-psg_AV-202610170373.html" target="_blank" rel="noopener">&quot;J&#x27;espère que le nouveau président français va continuer d&#x27;aider l&#x27;Ukraine&quot;: Zabarnyi répond à Marine Le Pen après Strasbourg-PSG</a><a class="art" href="https://rmcsport.bfmtv.com/football/ligue-1/video-psg-nous-luttons-pour-toute-l-europe-la-reponse-de-zabarnyi-a-marine-le-pen-sur-la-guerre-en-ukraine_VN-202610170371.html" target="_blank" rel="noopener">PSG : &quot;Nous luttons pour toute l&#x27;Europe&quot;, la réponse de Zabarnyi à Marine Le Pen sur la guerre en Ukraine</a><a class="art" href="https://rmcsport.bfmtv.com/football/ligue-1/tout-le-monde-dit-que-c-est-la-farmers-league-mais-la-reponse-de-zabarnyi-aux-critiques-sur-le-niveau-de-la-ligue-1_AV-202610170367.html" target="_blank" rel="noopener">&quot;Tout le monde dit que c&#x27;est la Farmers League mais...&quot;, la réponse de Zabarnyi aux critiques sur le niveau de la Ligue 1</a><a class="art" href="https://rmcsport.bfmtv.com/football/ligue-1/direct-troyes-lens-suivez-le-match-de-la-7e-journee-de-ligue-1-en-live_LS-202610170255.html" target="_blank" rel="noopener">Troyes-Lens: menés par un grand Thauvin, les Lensois enchaînent et plongent les Troyens dans la crise</a><a class="art" href="https://rmcsport.bfmtv.com/football/ligue-1/direct-lille-brest-suivez-le-match-de-la-7e-journee-de-ligue-1-en-live_LS-202610170246.html" target="_blank" rel="noopener">Lille-Brest: le LOSC pouvait prendre la tête de la L1 mais concède le nul</a><a class="art" href="https://rmcsport.bfmtv.com/football/clubs/paris-saint-germain/luis-enrique_DN-202308300457.html" target="_blank" rel="noopener">Luis Enrique entraîneur du PSG</a><a class="art" href="https://rmcsport.bfmtv.com/football/ligue-1/trois-penalties-de-suite-rates-par-le-psg-il-nous-manque-un-specialiste-l-aveu-de-luis-enrique_AV-202610170362.html" target="_blank" rel="noopener">Trois penalties de suite ratés par le PSG: &quot;Il nous manque un spécialiste&quot;, l&#x27;aveu de Luis Enrique</a><a class="art" href="https://rmcsport.bfmtv.com/football/clubs/paris-saint-germain/direct-strasbourg-psg-suivez-en-live-le-match-de-la-7e-journee-de-ligue-1_LS-202610170161.html" target="_blank" rel="noopener">Ligue 1: secoués avant de défier le FC Barcelone, le PSG et Ousmane Dembélé renversent Strasbourg</a><h2>BBC Sport</h2><a class="art" href="https://www.bbc.co.uk/sport/football/videos/c65yn28p859wo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Liverpool come from behind to beat nine-man Brentford</a><a class="art" href="https://www.bbc.co.uk/sport/football/videos/c6pwgx89djn2o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Haaland nets double as Man City go six points clear at the top</a><a class="art" href="https://www.bbc.co.uk/sport/football/videos/cwdd897vvl8vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Manzambi heads Villa to victory at Newcastle</a><a class="art" href="https://www.bbc.co.uk/sport/football/videos/cq146nz03k16o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Neto scores twice as Chelsea win at Everton</a><a class="art" href="https://www.bbc.co.uk/sport/football/videos/c6rmy7w1kdgeo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Iwobi delivers Fulham&#x27;s first win of season</a><a class="art" href="https://www.bbc.co.uk/sport/football/articles/c9j34rke27zjo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Wirtz delivers but remains Liverpool&#x27;s conundrum</a><a class="art" href="https://www.bbc.co.uk/sport/football/articles/c9vgr6vj4mnyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Boos and bananas on day of defiance at Man City</a><a class="art" href="https://www.bbc.co.uk/sport/football/articles/ck054652mv07o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Villa&#x27;s Manzambi shows Newcastle what they missed out on</a>
 </main>
-
-<script>
-function go(base){
-  var v = document.getElementById("q").value.trim() || "football actualité";
-  window.open(base + encodeURIComponent(v), "_blank", "noopener");
-}
-document.getElementById("gnews").addEventListener("click", function(e){ e.preventDefault(); go("https://www.google.com/search?tbm=nws&q="); });
-document.getElementById("gvid").addEventListener("click", function(e){ e.preventDefault(); go("https://www.youtube.com/results?search_query="); });
-</script>
 </body>
 </html>
